@@ -5,21 +5,21 @@
 class Conoha < Formula
   desc "CLI tool for ConoHa VPS3 API"
   homepage "https://crowdy.github.io/conoha-cli-pages/"
-  version "0.4.3"
+  version "0.4.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.3/conoha-cli_0.4.3_darwin_amd64.tar.gz"
-      sha256 "4ca3061496a4ae9b00b5b954517d344c25e643d554219964dd830a98bfe3996b"
+      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.4/conoha-cli_0.4.4_darwin_amd64.tar.gz"
+      sha256 "f68e71f8500a27cd52760f2e9287801b9f8d110d017d4dba7a816bb29ef8a7c3"
 
       define_method(:install) do
         bin.install "conoha"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.3/conoha-cli_0.4.3_darwin_arm64.tar.gz"
-      sha256 "4e1ae89733f336d4e96a785c37c07acf12ca2f5cc60f8f86f9395a196a0bef9d"
+      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.4/conoha-cli_0.4.4_darwin_arm64.tar.gz"
+      sha256 "ec064d8a50d52f6b46ea44ab8d0d668f228392184e8906b168a743dfca910211"
 
       define_method(:install) do
         bin.install "conoha"
@@ -29,15 +29,15 @@ class Conoha < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.3/conoha-cli_0.4.3_linux_amd64.tar.gz"
-      sha256 "f86700219d0c8605316e8c047efbe89819f5fa85749b867857889849a4d699f5"
+      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.4/conoha-cli_0.4.4_linux_amd64.tar.gz"
+      sha256 "1a8351cec1d80070dc88f844ab4a64604b6f02248c9741f3d964a9d9bbc01111"
       define_method(:install) do
         bin.install "conoha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.3/conoha-cli_0.4.3_linux_arm64.tar.gz"
-      sha256 "be37951ca47c862f085cdd6b27cedfd35ecadeb4222b46671274d05ae7ffbd04"
+      url "https://github.com/crowdy/conoha-cli/releases/download/v0.4.4/conoha-cli_0.4.4_linux_arm64.tar.gz"
+      sha256 "fed00cc533cc092d533fef5ccac3b8cb9bf7f122f0808c977ea8aa8f06c17448"
       define_method(:install) do
         bin.install "conoha"
       end
