@@ -11,7 +11,7 @@ class Conoha < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/crowdy/conoha-cli/releases/download/v0.5.3/conoha-cli_0.5.3_darwin_amd64.tar.gz"
-      sha256 "997d3de60f69ec346f97e932a02bd5e479b88d29b15e0bc7bfe39f3859fe0a16"
+      sha256 "d1f59cb5121701ffdcf46f16e6e6050f262e1d18a79dd209764d1f6754535198"
 
       define_method(:install) do
         bin.install "conoha"
@@ -19,7 +19,7 @@ class Conoha < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/crowdy/conoha-cli/releases/download/v0.5.3/conoha-cli_0.5.3_darwin_arm64.tar.gz"
-      sha256 "13f199c831f4984a10fee7d6a11d03126685b74adce84748fa1cc3f99bfc7cd3"
+      sha256 "95c71585b716289fba437b738e18b4ec1306d66266c5df7666486d29b8532134"
 
       define_method(:install) do
         bin.install "conoha"
@@ -30,14 +30,14 @@ class Conoha < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/crowdy/conoha-cli/releases/download/v0.5.3/conoha-cli_0.5.3_linux_amd64.tar.gz"
-      sha256 "2d2f76d4c0e79a12c4c084367fbbf1b37e9649efd641d973f36e3381b8d3f149"
+      sha256 "f34314af27b3eac157608d19ee9d3f22c4f90efd08fc7b1948d1affec9118935"
       define_method(:install) do
         bin.install "conoha"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/crowdy/conoha-cli/releases/download/v0.5.3/conoha-cli_0.5.3_linux_arm64.tar.gz"
-      sha256 "8fbda9b761f1fdd610b22aa3bd4d3f99bb4ce09fb281d5e29c2520983317ca68"
+      sha256 "555051fbbb616c89d51dffe43d7a82df5e378fc65a0b8287f5fd8f1220a62471"
       define_method(:install) do
         bin.install "conoha"
       end
